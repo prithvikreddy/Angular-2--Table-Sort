@@ -1,0 +1,53 @@
+{
+    "data": [
+        {
+            "accountPrefix": "IRA",
+            "accountNumber": "5200",
+            "availableCash": 5763.36,
+            "todaysChangePercentage": -0.08,
+            "todaysChangeAmount": 8916.69
+        },
+        {
+            "accountPrefix": "AAA",
+            "accountNumber": "1812",
+            "availableCash": 2010926.10,
+            "todaysChangePercentage": 0.21,
+            "todaysChangeAmount": 38881.63
+        },
+        {
+            "accountPrefix": "AAA",
+            "accountNumber": "3810",
+            "availableCash": 10050054.07,
+            "todaysChangePercentage": 0.07,
+            "todaysChangeAmount": 8916.69
+        },
+        {
+            "accountPrefix": "REG",
+            "accountNumber": "2019",
+            "availableCash": 13465679.34,
+            "todaysChangePercentage": 0.00,
+            "todaysChangeAmount": 0.00
+        },
+        {
+            "accountPrefix": "AAA",
+            "accountNumber": "0029",
+            "availableCash": 39160334.42,
+            "todaysChangePercentage": -0.07,
+            "todaysChangeAmount": 31435.87
+        },
+        {
+            "accountPrefix": "IRA",
+            "accountNumber": "0146",
+            "availableCash": 5763.36,
+            "todaysChangePercentage": 0.08,
+            "todaysChangeAmount": 4526.69
+        },
+        {
+            "accountPrefix": "IRA",
+            "accountNumber": "4567",
+            "availableCash": 15884302.39,
+            "todaysChangePercentage": 0.03,
+            "todaysChangeAmount": 7430.83
+        }
+    ]
+}

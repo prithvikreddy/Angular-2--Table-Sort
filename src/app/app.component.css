@@ -1,0 +1,52 @@
+body {
+  background-color:#0F8EC7;
+}
+
+table{
+  background-color:white;
+  width:100%;
+}
+
+thead{
+  cursor:pointer;
+}
+
+tfoot{
+  text-align:center;
+  cursor:pointer;
+}
+tfoot td{
+    height: 30px;
+}
+
+th,tbody td {
+  border-bottom: 1px solid #EFEFEF;
+}
+
+.has-sort{
+  background-color: #EFEFEF;
+}
+
+.first-col{
+  text-align:left;
+  padding-left:10px;
+}
+
+tfoot, td.first-col, .sorting-span{
+  color:#0F8EC7; 
+}
+
+.second-col{
+  text-align:right;
+  padding-right:40px;
+}
+.change-label{
+  color:#a8a3a3;
+}
+.negative{
+  color:red;
+}
+
+.positive{
+  color:green;
+}

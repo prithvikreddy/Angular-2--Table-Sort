@@ -1,0 +1,37 @@
+<table>
+  <thead>
+    <tr>
+      <th [ngClass]="{'has-sort': curSortCol==='accountNumber'}" (click)="sort('accountNumber')" class="first-col">Account
+        <span class="sorting-span" *ngIf="curSortCol==='accountNumber' && sorting !==''">
+          {{sorting==='asc'? '&#708;':'&#709;'}}
+        </span>
+      </th>
+      <th [ngClass]="{'has-sort': curSortCol === 'availableCash'}" (click)="sort('availableCash')" class="second-col">
+        <span class="sorting-span" *ngIf="curSortCol==='availableCash' && sorting !==''">
+          {{sorting==='asc'? '&#708;':'&#709;'}}
+        </span>
+        <span>Available Cash
+          <br/>
+          <span class="change-label">Today's Change</span>
+        </span>
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let account of accountsToDisplay">
+      <td class="first-col">{{ account.accountPrefix }} - {{ account.accountNumber }}</td>
+      <td class="second-col">{{ account.availableCash | currency:'USD':true }}
+        <br/>
+         <span [ngClass]="{  'negative' : account.todaysChangePercentage < 0, 'positive': account.todaysChangePercentage>0}">{{ (account.todaysChangePercentage > 0) ? "+" + account.todaysChangePercentage : account.todaysChangePercentage }}%
+          / {{ account.todaysChangeAmount | currency:'USD':true }}
+        </span>
+      </td>
+    </tr>
+  </tbody>
+  <tfoot (click)="loadMore()" *ngIf="showLoadMore">
+    <tr>
+      <td colspan="2">Load more</td>
+    </tr>
+  </tfoot>
+</table>
+
